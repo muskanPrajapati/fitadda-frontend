@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b169d8feab.js" crossorigin="anonymous"></script>
+    <title>Cult Center</title>
+    <link rel="icon" href="../../img/Logowithoutname.png" type="image/x-icon">
+    <style rel="stylesheet" href="../main.css"></style>
+    <link rel="stylesheet" href="./cultcenter.css">
+</head>
+
+<body onload="getCoordintes()">
+    <!----------- Nav bar and Main page ----------->
+
+    <div class="container" id="blur">
+        <div id="nav-bar">
+            <nav>
+                <div class="nav-grid">
+                    <div id="logo">
+                        <a href="../../index.html">
+                            <div id="logo-img">
+                                <img src="../../img/Logowithoutname.png" alt="" width="38px">
+                            </div>
+                        </a>
+                        <a href="cultcenter.html">
+                            <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/image/header-web/cult2.svg"
+                                alt="">
+                        </a>
+                        <a href="#dropdown">
+                            <img src="https://static.cure.fit/assets/images/arrow-clp.svg" alt="" id="rotateDropDown"
+                                onclick="dropdowneffect(id)">
+                        </a>
+                    </div>
+                    <div id="nav-links">
+                        <ul>
+                            <li><a href="#">Cult Centers</a></li>
+                            <li><a href="home_cult_gyms.html">Gyms</a></li>
+                            <li><a href="../Cultfit-Store/onlinept.html">Online PT</a></li>
+                            <li><a href="../Cultfit-Store/cultsport.html">Cultsport</a></li>
+                        </ul>
+                    </div>
+                    <div id="nav-bar-right">
+                        <div id="nav-bar-right-items">
+                            <div id="location">
+                                <a href="#location-popup" id="location-circle" >
+                                    City:
+                                 </a>
+                                     <div id="change-location-navbar"></div>
+                            </div>
+
+                                <!-- Location popup bar -->
+
+    <div id="location-popup" class="overlay">
+        <a class="close" href="#">&times;</a>
+        <div id="location-popup-heading">Select your Location</div>
+        <div id="location-popup-city">
+            <div id="location-popup-city-header">POPULAR CITY</div>
+            <div id="top-city-locations">
+                <div onclick="locationUpdate(id)" id="Bangalore">
+                    <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_50,h_50,ar_1/dpr_2/image/cities/blr_new.png"
+                        width="60px" alt="">
+                    <div>Bangalore</div>
+                </div>
+                <div onclick="locationUpdate(id)" id="Delhi NCR">
+                    <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_50,h_50,ar_1/dpr_2/image/cities/ncr_new.png"
+                        width="60px" alt="">
+                    <div>Delhi NCR</div>
+                </div>
+                <div onclick="locationUpdate(id)" id="Hyderabad">
+                    <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_50,h_50,ar_1/dpr_2/image/cities/hyd_new.png"
+                        width="60px" alt="">
+                    <div>Hyderabad</div>
+                </div>
+                <div onclick="locationUpdate(id)" id="Mumbai">
+                    <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_50,h_50,ar_1/dpr_2/image/cities/mumbai_selected.png"
+                        width="60px" alt="">
+                    <div>Mumbai</div>
+                </div>
+            </div>
+            <div id="location-popup-city-header">OTHER CITY</div>
+            <div>
+                <ul>
+                    <li><a href="#" onclick="locationUpdate(id)" id="Chennai">Chennai</a></li>
+                    <li><a href="#" onclick="locationUpdate(id)" id="Visakhapatnam">Visakhapatnam</a></li>
+                    <li><a href="#" onclick="locationUpdate(id)" id="Jaipur">Jaipur</a></li>
+                    <li><a href="#" onclick="locationUpdate(id)" id="Vadodara">Vadodara</a></li>
+                    <li><a href="#" onclick="locationUpdate(id)" id="Pune">Pune</a></li>
+                    <li><a href="#" onclick="locationUpdate(id)" id="Kolkata">Kolkata</a></li>
+                    <li><a href="#" onclick="locationUpdate(id)" id="Ahmedabad">Ahmedabad</a></li>
+                    <li><a href="#" onclick="locationUpdate(id)" id="Mysore">Mysore</a></li>
+                    <li><a href="#" onclick="locationUpdate(id)" id="Chandigarh Tricity">Chandigarh Tricity</a></li>
+                    <li><a href="#" onclick="locationUpdate(id)" id="Kota">Kota</a></li>
+                    <li><a href="#" onclick="locationUpdate(id)" id="Kochi">Kochi</a></li>
+                    <li><a href="#" onclick="locationUpdate(id)" id="Ludhiana">Ludhiana</a></li>
+                    <li><a href="#" onclick="locationUpdate(id)" id="Surat">Surat</a></li>
+                    <li><a href="#" onclick="locationUpdate(id)" id="Jammu">Jammu</a></li>
+                    <li><a href="#" onclick="locationUpdate(id)" id="Amritsar">Amritsar</a></li>
+                    <li><a href="#" onclick="locationUpdate(id)" id="Indore">Indore</a></li>
+                    <li><a href="#" onclick="locationUpdate(id)" id="Coimbatore">Coimbatore</a></li>
+                    <li><a href="#" onclick="locationUpdate(id)" id="Manglore">Manglore</a></li>
+                    <li><a href="#" onclick="locationUpdate(id)" id="Bhopal">Bhopal</a></li>
+                    <li><a href="#" onclick="locationUpdate(id)" id="Nagpur">Nagpur</a></li>
+                    <li><a href="#" onclick="locationUpdate(id)" id="Kanpur">Kanpur</a></li>
+                    <li><a href="#" onclick="locationUpdate(id)" id="Agra">Agra</a></li>
+                    <li><a href="#" onclick="locationUpdate(id)" id="Lucknow">Lucknow</a></li>
+                    <li><a href="#" onclick="locationUpdate(id)" id="Other">Other</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+                            <!-- login -->
+                            <div id="login">
+                                <div id="login-logo">
+                                    <a href="#login" onclick="fetchLoginPage()"><img
+                                            src="https://static.cure.fit/assets/images/user-image.svg" alt=""></a>
+                                </div>
+                                <a href="#login" onclick="fetchLoginPage()">
+                                    <div id="login-text">Login</div>
+                                </a>
+                            </div>
+                            <div id="cart">
+                                <a href="../../store/cartPage.html" >
+                                    <img src="https://static.cure.fit/assets/images/cart-image.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+        <!-------------------- Main-page-data --------------------->
+
+
+        <div id="img-scroll" onclick="window.location.href ='../cultFit-FoodStore/live.html'">
+            <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_2880:595/dpr_2/image/vm/d4c7f869-682e-4df4-ba10-729c49042ce1.png"
+                alt="">
+            <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_2880:595/dpr_2/image/vm/dbfd5ec5-cfdb-4d0b-8fef-7ab684d3356d.png"
+                alt="">
+        </div>
+        <div id="img-scroll-btn">
+            <!-- <div>
+                <div id="img-ptr"></div>
+                <div id="img-ptr"></div>
+            </div> -->
+        </div>
+        <div class="cult-offers">
+            <div>
+                <p class="offer-heading">cultpass BLACK</p>
+                <div class="offer-heading2">
+                    <div></div>
+                    <div>ENJOY THE BENEFITS OF</div>
+                    <div></div>
+                </div>
+                <div class="offer-type">
+                    <div><span>Buy Now </span>start anytime</div>
+                    <div><span>Pause </span>pack anytime</div>
+                    <div><span>Safest </span>gyms in Town</div>
+                    <div><span>No-Cost </span>EMI available</div>
+                </div>
+                <p class="subscription-heading">Choose Your Subscription</p>
+                <div class="subscription-offers">
+                    <div onclick="window.location.href ='buyPass.html'">
+                        <div class="offer-flex1">
+                            <p>12 Months</p>
+                            <p><span>₹40000 </span> ₹18990</p>
+                        </div>
+                        <div class="offer-flex2">
+                            <p class="buy-tag">BUY</p>
+                        </div>
+                    </div>
+                    <div onclick="window.location.href ='buyPass.html'">
+                        <div class="offer-flex1">
+                            <p>3 Months</p>
+                            <p><span>₹12550 </span> ₹9990</p>
+                        </div>
+                        <div class="offer-flex2">
+                            <p class="buy-tag">BUY</p>
+                        </div>
+                    </div>
+                    <div onclick="window.location.href ='buyPass.html'">
+                        <div class="offer-flex1">
+                            <p>6 Months</p>
+                            <p><span>₹23550 </span> ₹15990</p>
+                        </div>
+                        <div class="offer-flex2">
+                            <p class="buy-tag">BUY</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cult-offers">
+            <div>
+                <h2>cultpass SELECT</h2>
+                <p class="offer-heading offer-headingp3">cultpass BLACK</p>
+                <div class="offer-heading2">
+                    <div></div>
+                    <div>ENJOY THE BENEFITS OF</div>
+                    <div></div>
+                </div>
+                <div class="offer-type offer-type-select">
+                    <div><span>01 </span>Center Access</div>
+                    <div><span id="infinity"><img
+                                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,c_fit/dpr_2/image/icons/cult/infinity_white.png"
+                                alt="" width="20px"> </span>Unlimited Classes</div>
+                    <div><span id="location"><img
+                                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,c_fit/dpr_2/image/icons/cult/location_white_3x.png"
+                                alt="" width="20px"> </span>Available only at few centers</div>
+                </div>
+                <p class="subscription-heading">Choose Your Subscription</p>
+                <div class="subscription-offers">
+                    <div onclick="window.location.href ='buyPass.html'">
+                        <div class="offer-flex1">
+                            <p>12 Months</p>
+                            <p><span>₹10400 </span> ₹5490</p>
+                        </div>
+                        <div class="offer-flex2">
+                            <p class="buy-tag">BUY</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="workouts">
+            <div>WORKOUTS</div>
+            <div id="workout-div">
+                <div onclick="window.location.href ='../Cultfit-Store/yogapose2.html'">
+                    <div id="workout-name">Yoga</div>
+                    <div>
+                        <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_485,ar_485:323,c_fit/dpr_2/v1/cult-media/v2web/workouts/1_id/PRODUCT_BNR_2020-02-04T13:19:29.014Z.png"
+                            alt="" width="100%">
+                    </div>
+                </div>
+                <div>
+                    <div id="workout-name">Boxing</div>
+                    <div>
+                        <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_485,ar_485:323,c_fit/dpr_2/v1/cult-media/v2web/workouts/4_id/PRODUCT_BNR_2020-07-21T18:32:59.441Z.png"
+                            alt="" width="100%">
+                    </div>
+                </div>
+                <div>
+                    <div id="workout-name">Dance Fitness</div>
+                    <div>
+                        <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_485,ar_485:323,c_fit/dpr_2/v1/cult-media/v2web/workouts/84_id/PRODUCT_BNR_2020-02-04T13:04:53.343Z.png"
+                            alt="" width="100%">
+                    </div>
+                </div>
+                <div onclick="window.location.href ='../Cultfit-Store/yogapose1.html'">
+                    <div id="workout-name">S&C</div>
+                    <div>
+                        <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_485,ar_485:323,c_fit/dpr_2/v1/cult-media/v2web/workouts/5_id/PRODUCT_BNR_2020-02-04T13:17:06.754Z.png"
+                            alt="" width="100%">
+                    </div>
+
+                </div>
+                <div>
+                    <div id="workout-name">HRX Workout</div>
+                    <div>
+                        <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_485,ar_485:323,c_fit/dpr_2/v1/cult-media/v2web/workouts/22_id/PRODUCT_BNR_2020-03-04T11:36:46.263Z.png"
+                            alt="" width="100%">
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="quick-link">
+                <div id="quick-link-heading">Quick Links</div>
+                <div>Help & Support</div>
+                <hr>
+                <div>Terms & conditions</div>
+                <hr>
+            </div>
+
+            <div id="motivation-quote">
+                <div>BE SPIRITED</div>
+                <div>FEARLESS</div>
+                <div id="gray">AN EVERYBODY ATHLETE</div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <div id="footer">
+            <div id="footer-container">
+                <div id="footer-part-1">
+                    <div id="footer-details">
+                        <div>
+                           FITADDA
+                            </div>
+                        <div class="description">
+                            At FITADDA we make group workouts fun, daily food healthy & tasty, mental fitness easy
+                            with yoga & meditation, and medical & lifestyle care hassle-free. #BeBetterEveryDay
+                        </div>
+                    </div>
+
+                    <ul>
+                        <li><a href="#" target="_blank">CONTACT US</a></li>
+                        <li><a href="#" target="_blank">BLOG</a></li>
+                        <li><a href="#" target="_blank">PARTNER.FIT</a></li>
+                        <li><a href="#" target="_blank">TALKS</a></li>
+                        <li><a href="#" target="_blank">CAREERS</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="#" target="_blank">CULTFIT FOR BUSINESSES</a></li>
+                        <li><a href="#" target="_blank">CULT FRANCHISE</a></li>
+                        <li><a href="#" target="_blank">CULT PASS NETWORK</a></li>
+                        <li><a href="#" target="_blank">CORPORATE PARTNERSHIPS</a></li>
+                    </ul>
+
+                    <ul>
+                        <li class="footer-app-information"><img
+                                src="https://static.cure.fit/assets/images/app-store.svg" alt="" width="80%"
+                                onclick="applestore()"></li>
+                        <li class="footer-app-information"><img
+                                src="https://static.cure.fit/assets/images/play-store.svg" alt="" width="80%"
+                                onclick="playsotre()"></li>
+                    </ul>
+                </div>
+
+                <div class="flex">
+                    <div id="contact-links">
+                        <div><a href="#">Contact us</a></div>
+                        <div><a href="#">FAQ</a></div>
+                        <div><a href="#">Terms and Condition</a></div>
+                        <div><a href="#">Privacy Policy</a></div>
+                        <div><a href="#">Refund Policy</a></div>
+                    </div>
+                    <div id="icons">
+                        <a href="https://www.youtube.com/channel/UCSE72IaHOL-1Tv-m3JHE4Cg" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/cultfitOfficial/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/cultfitOfficial" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/BeCureFit/" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-------------- login-page ------------->
+
+    <div id="login-page">
+        <div id="close-button">
+            <button onclick="window.location.href = 'home_cult_cultCenters.html'"><span>X</span></button>
+        </div>
+        <div id="login-logo-popup">
+            <div><img src="https://static.cure.fit/assets/images/curefit_login_logo.svg" alt=""></div>
+            <img src="https://static.cure.fit/assets/images/cult_name.svg" alt="">
+        </div>
+        <div id="login-input-container">
+            <div id="login-input">Phone Number<br />
+                <input type="number" placeholder="Enter your mobile number" id="login-phone">
+            </div>
+            <div id="login-input">Password<br />
+                <input type="password" placeholder="Enter your Password" id="login-password">
+                <i class="far fa-eye-slash" id="togglePassword" onclick="showHidePassword(id)"></i>
+            </div>
+        </div>
+        <div id="submit-login">
+            <button class="input-login-box" onclick="verifyLogin()">Continue</button>
+        </div>
+        <div class="TnC-check">
+            <div>By Continuing you agree to the
+                <a href="https://static.cult.fit/terms_cult.html" target="_blank">Terms of Services</a>
+                and <a href="https://static.cult.fit/privacy_cult.html" target="_blank">Privacy policy</a>
+            </div>
+        </div>
+        <div>
+            <div id="login-with-gmail" onclick="window.location.href = 'Signup.html'">SIGN UP</div>
+        </div>
+    </div>
+
+
+    <!-- nav-right-popup-links -->
+
+    <div class="links-container">
+        <div id="dropdown-links">
+            <div id="grid-links">
+                <div>
+                    <a href="../../livePage/live.html">
+                        <img src="https://static.cure.fit/assets/images/Livefit.svg" alt="" width="38px">
+                        <div>
+                            <p>LIVE</p>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="cultcenter.html">
+                        <img src="https://static.cure.fit/assets/images/cult-icon.svg" alt="" width="38px">
+                        <div>
+                            <p>CULT</p>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="../../livePage/mindfullnes/mindfullness.html">
+                        <img src="https://static.cure.fit/assets/images/mind-icon.svg" alt="" width="38px">
+                        <div>
+                            <p>MIND</p>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="../../carePage/onlinecunsult.html">
+                        <img src="https://static.cure.fit/assets/images/carefit-blk.svg" alt="" width="38px">
+                        <div>
+                            <p>CARE</p>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="../../store/store.html">
+                        <img src="https://static.cure.fit/assets/images/store-icon.svg" alt="" width="38px">
+                        <div>
+                            <p>STORE</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--------------- User Information ---------------->
+
+    <!-- <div id="user-info-popup">
+        <div onclick="window.location.href ='userProfile.html'"><i class="fas fa-user"></i> Profile</div>
+        <hr>
+        <div onclick="window.location.href ='userSupport.html'"><i class="fas fa-headset"></i> Support</div>
+        <hr>
+        <div onclick="window.location.href ='userAccount.html'"><i class="fas fa-cog"></i> Account</div>
+        <hr>
+        <div onclick="logout()"><i class="fas fa-sign-out-alt"></i> Log out</div>
+    </div> -->
+</body>
+<script src="cultcenter.js"></script>
+</html>
