@@ -1,0 +1,215 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/* nav */
+body {
+  width: 100%;
+  height: fit-content;
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+.container#blur.active {
+  filter: blur(5px);
+  position: fixed;
+  pointer-events: none;
+  user-select: none;
+}
+
+#nav-bar {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background: white;
+}
+
+.nav-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  margin-top: 2px;
+  box-shadow: 0px 4px rgb(0 0 0 / 9%);
+  padding: 5px 25px 0px;
+  height: 55px;
+  justify-items: center;
+}
+
+#logo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* font-size: 20px; */
+}
+
+#logo a:nth-child(2) img {
+  margin-left: 20px;
+}
+
+#logo a:nth-child(3) img {
+  margin-left: 5px;
+  transition: 0.5s;
+}
+
+#nav-links ul {
+  display: flex;
+  width: 200%;
+  height: 100%;
+  margin: auto;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+#nav-links ul li {
+  list-style: none;
+  width: 50%;
+  text-align: center;
+}
+
+#nav-links ul li a {
+  text-decoration: none;
+  letter-spacing: 0.1px;
+  color: #404040;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+#nav-links ul li:nth-child(3) a {
+  color: #fc2e71;
+}
+
+#nav-bar-right {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#nav-bar-right-items {
+  display: flex;
+  height: 15px;
+
+}
+
+
+#nav-bar-right-items > div {
+  display: flex;
+  align-items: center;
+}
+
+#nav-bar-right-items a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+}
+
+#login {
+  margin-left: 30px;
+}
+
+#login-logo {
+  margin-right: 15px;
+  color: rgb(40, 229, 100);
+}
+
+#login-text {
+  font: 1em sans-serif;
+  font-size: 20px;
+  color: rgb(40, 229, 100);
+}
+
+
+.Healthy-Recipes {
+  margin: 100px;
+  padding: 15px;
+  text-align: center;
+  
+}
+.Healthy-Recipes h2 {
+  font-family: "Merriweather", serif;
+  margin-left: 10px;
+}
+h2{
+  text-transform: uppercase;
+}
+
+.Healthy-Recipes-display {
+  margin: 10px;
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  grid-template-columns: 20% 20% 20%;
+  grid-row-gap: 20px;
+  grid-column-gap: 50px;
+}
+.Healthy-Recipes-display > div {
+  margin: 3%;
+  height: 500px;
+  width: 200px;
+  border-radius: 10px 10px 0px 0px;
+  padding: 10px;
+}
+.Healthy-Recipes-display > div > div:nth-child(1) {
+  height: 75%;
+  width : 100%;
+  border-radius: 5px 5px 5px 5px;
+  background: no-repeat;
+  background-size: cover;
+  
+}
+.Healthy-Recipes-display > div > div:nth-child(2) {
+  height: 10%;
+  
+}
+.Healthy-Recipes-display > div > div > p {
+  font-size: 15px;
+  margin-left: 15px;
+  padding: 10px;
+}
+
+h3{
+  text-transform: uppercase;
+  text-align: center;
+  justify-content: center;
+  font-size: medium;
+  
+}
+
+/* button */
+
+button{
+  /* @include corners (5px); */
+  background: rgb(225, 193, 252);
+  color: rgb(21, 20, 20);
+  border-radius: 4rem;
+  text-decoration:none;
+  cursor:pointer;
+  font-size:1rem;
+  padding:5px 5px;
+  width:150px;
+  margin: 8px;
+  outline: none;
+  align-items: center;
+  /* border: solid .5px rgb(12, 12, 12);
+  border-radius: 4rem;
+  text-decoration:none;
+  cursor:pointer;
+  font-size:1.1rem;
+  padding:15px 10px;
+  width:150px;
+  margin: 8px;
+  outline: none; */
+}
+  button:hover{
+  /* @include transition; */
+  background:rgb(255, 141, 192);
+  border: solid 1px black;
+  color:black;
+  text-decoration: underline;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+}

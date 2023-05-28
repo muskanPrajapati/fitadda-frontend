@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITADDA/ LOGIN</title>
+    <link rel="icon" href="../img/Logowithoutname.png" type="image/x-icon">
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/b169d8feab.js" 
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container-img"></div>
+        <div id="login-page">
+            <div id="close-button">
+                <H3>LOGIN PAGE</H3>
+            </div>
+            <div id="login-logo-popup">
+                <div><img src="../img/Logo.png" alt="" id="logo"></div>
+            </div>
+            <div id="login-input-container">
+                <div id="login-input">Email<br />
+                    <input type="email" placeholder="Enter your email address" id="login-phone">
+                </div>
+                <div id="login-input">Password<br />
+                    <input type="password" placeholder="Enter your Password" id="login-password">
+                    <i class="far fa-eye-slash" id="togglePassword" onclick="showHidePassword(id)"></i>
+                </div>
+                
+                <p style = "font-size: 15px; margin:  10px 50px ;"><a href="./forget password/forgetpassword.html" >Forgot Password?</a></p> 
+                
+
+            </div>
+            <div id="submit-login">
+                <button class="input-login-box" onclick="verifyLogin()">Continue</button>
+            </div>
+            <div class="TnC-check">
+                <div>By Continuing you agree to the
+                    <a href="https://static.cult.fit/terms_cult.html" target="_blank">Terms of Services</a>
+                    and <a href="https://static.cult.fit/privacy_cult.html" target="_blank">Privacy policy</a>
+                </div>
+            </div>
+            <div>
+                <div id="login-with-gmail" onclick="window.location.href = './sign-up.html'">SIGN UP</div>
+            </div>
+        </div>
+</body>
+</html>
+
+<script src="login.js"></script>

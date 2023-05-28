@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="icon" href="../img/Logowithoutname.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/b169d8feab.js" crossorigin="anonymous"></script>
+    <title>Profile</title>
+    <link rel="stylesheet" href="./userProfile.css">
+</head>
+
+<body onload="userProfile()">
+    <div class="container">
+        <div id="nav-bar">
+            <nav>
+                <div class="nav-grid">
+                    <div id="logo">
+                        <a href="../../landingpage/homePage.html">
+                            <div id="logo-img">
+                                <img src="../../img/Logowithoutname.png" alt="" width="38px">
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <ul id="nav-lists">
+                            <li class="nav-links"><a href="../livePage/live.html">
+                                    <img src="https://static.cure.fit/assets/images/Livefit.svg" alt="" width="38px">
+                                    <div>
+                                        <p>LIVE</p>
+                                    </div>
+                                </a></li>
+                            <li class="nav-links"><a
+                                    href="home_cult_cultCenters.html">
+                                    <img src="https://static.cure.fit/assets/images/cult-icon.svg" alt="" width="38px">
+                                    <div>
+                                        <p>CULT</p>
+                                    </div>
+                                </a></li>
+                            <li class="nav-links"><a href="../livePage/mindfullnes/mindfullness.html">
+                                    <img src="https://static.cure.fit/assets/images/mind-icon.svg" alt="" width="38px">
+                                    <div>
+                                        <p>MIND</p>
+                                    </div>
+                                </a></li>
+                            <li class="nav-links"><a href="../carePage/onlinecunsult.html">
+                                    <img src="https://static.cure.fit/assets/images/carefit-blk.svg" alt=""
+                                        width="38px">
+                                    <div>
+                                        <p>CARE</p>
+                                    </div>
+                                </a></li>
+                            <li class="nav-links"><a href="../store/store.html">
+                                    <img src="https://static.cure.fit/assets/images/store-icon.svg" alt="" width="38px">
+                                    <div>
+                                        <p>STORE</p>
+                                    </div>
+                                </a></li>
+                        </ul>
+                    </div>
+
+                    <!-- login -->
+                    <div id="nav-bar-right">
+                        <div id="nav-bar-right-items">
+                            <div id="login">
+                            </div>
+
+                            <!-- cart -->
+                            <div id="cart">
+                                <a href="../store/cartPage.html" >
+                                    <img src="https://static.cure.fit/assets/images/cart-image.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="main-data">
+            <div id="left-data">
+                <div id="user">
+                    <!-- from js  -->
+                </div>
+                <div id="user-edits">
+                    <ul>
+                        <li onclick="window.location.href='userProfile.html'">
+                            <div>Profile</div>
+                            <div><i class="fas fa-user"></i></div>
+                        </li>
+                        <li onclick="window.location.href ='userAccount.html'">
+                            <div>Account</div>
+                            <div><i class="fas fa-cog"></i></div>
+                        </li>
+                        <li onclick="window.location.href ='userSupport.html'">
+                            <div>Support</div>
+                            <div><i class="fas fa-headset"></i></div>
+                        </li>
+                        <li>
+                            <div onclick="userLogOut()">Log out</div>
+                            <div><i class="fas fa-sign-out-alt" onclick="userLogOut()"></i></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!------- User profile ------>
+            <div id="right-data-userProfile">
+                <div id="profile-img-div"><img src="http://assets.stickpng.com/images/585e4bf3cb11b227491c339a.png"
+                        alt="" width="150px" id="profile-picture1"></div>
+                <div id="changeProfilePicture" onclick="updateProfilePicture()">Click to change profile picture</div>
+                <p>PROFILE</p>
+
+                <div class="grid user-profile-form">
+                    <div id="user-input-name">Name<br />
+                        <input type="text" placeholder="Enter your name" id="user-name" >
+                    </div>
+                    <div id="user-input-phone">Phone Number<br />
+                        <input type="text" placeholder="Enter your mobile number" id="user-phone" >
+                    </div>
+                    <div id="user-input-Gender" readonly>Gender<br />
+                        <input type="text" id="user-gender" placeholder="Specify your gender">
+                        <i class="fas fa-male" id="male-icon"></i>
+                        <i class="fas fa-female"id="female-icon"></i>
+                        <i class="fas fa-transgender" id="transgender-icon"></i>
+                    </div>
+                    <div id="user-input-email">Email<br />
+                        <input type="email" placeholder="Enter your email id" id="user-email">
+                    </div>
+                    <div id="user-profile-button">
+                         <button id="save">edit profile</button> 
+                    </div>
+                </div>
+            </div>
+
+            <!-- form -->
+            <div id="infoForm" class="Form" >
+                <h2>Enter Requiered Information</h2>
+                <form  action="" >
+                    
+                    <label for="" id="name">Name :</label>
+                    <input type="text"  id="nameVal" placeholder="Enter name" >
+
+                    <label for="" id="phone">Phone : </label>
+                    <input type="number"  id="phnVal" placeholder="Enter Phone Number" >
+
+                    <label for="" id="email">E mail:</label>
+                    <input type="text"  id="emailVal" placeholder="Enter registered email">
+
+                    <label for="" id="gender">Gender</label>
+                    <select id="genderVal" >
+                        <option value="select" selected>Select</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                      </select>
+
+                      <button id="submit" onclick="closeForm(event)">Submit</button> 
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script src="profile.js"></script>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITADDA/SignUp</title>
+    <link rel="stylesheet" href="Signup.css">
+</head>
+
+<body>
+    <div id="container-img"></div>
+    <div class="container">
+        <div id="signUp-page">
+            <div id="close-button">
+                <H3>SIGN-UP PAGE</H3>
+            </div>
+            <div id="login-logo-popup">
+                <div><img src="../img/Logo.png" alt="" id="logo"></div>
+            </div>
+            <div class="signup-input-field">
+                <input type="text" id="name" placeholder="Full Name"> <br>
+                <input type="Email" id="email" placeholder="Email address"><br>
+                <input type="text" id="number" placeholder="Phone Number"><br>
+                <input type="Password" id="password" placeholder="Password"><br>
+                <div>By Continuing you agree to <a href="https://static.cult.fit/terms_cult.html"><span> Terms and
+                            Conditions </span></a> and <a href="https://static.cult.fit/privacy_cult.html"><span>Privacy
+                            Policy.</span></a></div>
+                <button class = "submit"onclick="adduser()">Submit</button>
+                <p class="smallText">Already have account :</p>
+                <button class = "login"onclick="navigateToLomePage()">Login</button>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+<script src="signup.js"></script>
+
+</html>

@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(224, 224, 224);
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+#container-img {
+    /* background-image: url("../img/bg-image.jpg"); */
+    background-size: cover;
+    filter: blur(6px);
+    width: 100vw;
+    height: 100vh;
+}
+
+#signUp-page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    width: 400px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+    background-color: rgb(255, 255, 255);
+    transition: all .3s ;
+}
+
+ @keyframes popup {
+    0% {
+        top: 110%;
+    }
+
+    30% {
+        top: 20%;
+    }
+
+    100% {
+        top: 40%;
+    }
+} 
+
+#close-button {
+    max-width: 100%;
+    margin-top: 5px;
+    text-align: center;
+}
+
+
+#login-logo-popup {
+    text-align: center;
+    margin-top: 5px;
+}
+
+#login-logo-popup img {
+    align-self: center;
+}
+
+#logo {
+    width: 50%;
+}
+
+#number::-webkit-outer-spin-button,
+#number::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#number {
+    letter-spacing: 5px;
+}
+
+::placeholder {
+    letter-spacing: normal;
+}
+
+.signup-input-field :nth-child(1) {
+    margin-top: 30px
+}
+
+input:focus {
+    outline: none;
+    box-shadow: rgb(55 138 197 / 71%) 0px 0px 16px 0px;
+    border: 2px solid rgb(55, 138, 197);
+}
+
+input {
+    font-size: 20px;
+    padding: 10px 14px;
+    margin-bottom: 10px;
+    border: 2px solid rgb(111, 105, 170);
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.submit{
+    font-size: 20px;
+    padding: 8px;
+    width: 65%;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: white;
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgb(111, 105, 170), rgb(55, 138, 197));
+    border: 0.5px  transparent pink;
+}
+.smallText{
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.login{
+    font-size: 18px;
+    padding: 10px;
+    width: 50%;
+    font-weight: 600;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgb(111, 105, 170), rgb(55, 138, 197));
+    border: 0.5px  transparent pink;
+}
+
+
+.signup-input-field div {
+    text-align: left;
+    width: 61%;
+    margin: auto;
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: outside;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.signup-input-field div span {
+    color: rgb(224, 32, 32);
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
