@@ -121,6 +121,6 @@ function userLogOut() {
       
         window.location.reload();
         alert("Now you are logged out!! ");
-        window.location.replace("../landingPage/homePage.html")
+        window.location.replace("../landingPage/index.html")
        
     }
