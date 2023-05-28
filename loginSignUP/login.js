@@ -24,7 +24,7 @@ function verifyLogin() {
                 document.cookie = 'fitaddatauser' + "=" + data.user.name + ";" + expires + ";path=/";
 
                 alert("Congratulation!! you have successfully Logged In ");
-                window.location.replace("../landingpage/index.html");
+                window.location.replace("../index.html");
             }
             else{
                 alert("Invalid Credentials!");

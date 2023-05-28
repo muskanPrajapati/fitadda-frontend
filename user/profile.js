@@ -167,7 +167,7 @@ console.log(" log out function is clicked ")
   
     window.location.reload();
     alert("Now you are logged out!! ");
-    window.location.replace("../landingPage/index.html")
+    window.location.replace("../index.html")
    
 }
 
