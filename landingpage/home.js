@@ -252,7 +252,8 @@ function showHidePassword(id) {
                 function processRequest(e) {
                     if (xhr.readyState == 4 && xhr.status == 200) {
                         var response = JSON.parse(xhr.responseText);
-                        var city = response.address.city;
+                        console.log(response);
+                        var city = response.address.county;
                         console.log(city);
                         let a = document.getElementById('change-location-navbar');
                         a.innerText = city

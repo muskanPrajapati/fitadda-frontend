@@ -280,7 +280,7 @@ function showHidePassword(id) {
                 function processRequest(e) {
                     if (xhr.readyState == 4 && xhr.status == 200) {
                         var response = JSON.parse(xhr.responseText);
-                        var city = response.address.city;
+                        var city = response.address.county;
                         console.log(city);
                         let a = document.getElementById('change-location-navbar');
                         a.innerText = city
@@ -299,18 +299,18 @@ function showHidePassword(id) {
 }
 
 function fetchballyWorkout(){
-    window.location.herf = "./workoutVideo/bally/ballyWorkout.html";
+    window.location.href = "./workoutVideo/bally/ballyWorkout.html";
 }
 
 function fetchCaloriCrush(){
-    window.location.herf = "./workoutVideo/calori Crush/calorCrush.html";
+    window.location.href = "./workoutVideo/calori Crush/calorCrush.html";
 }
 
 function fetchcoreyoga(){
-    window.location.herf = "./workoutVideo/Core Yoga/coreyoga.html";
+    window.location.href = "./workoutVideo/Core Yoga/coreyoga.html";
 }
 
 function fetchdance(){
     console.log("Fetching fullbody")
-    window.location.reload = "./workoutVideo/fullbody/fullbody.html";
+    window.location.href = "./workoutVideo/fullbody/fullbody.html";
 }

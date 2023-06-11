@@ -37,14 +37,6 @@
   top: 0;
   background: white;
   box-shadow: black 2rem;
-}
-nav-bar {
-  width: 100%;
-  /* position: fixed; */
-  z-index: 5;
-  top: 0;
-  background: white;
-  box-shadow: black 2rem;
   margin-bottom: 10px;
 }
 .nav-grid {
@@ -53,7 +45,7 @@ nav-bar {
   margin-top: 2px;
   box-shadow: rgb(0 0 0 / 71%) 0px -4px 15px -1px;
   padding: 5px 25px 0px;
-  height: 55px;
+  height: 80px;
   text-align: center;
   justify-items: center;
 }
@@ -63,6 +55,8 @@ nav-bar {
 #logo {
   display: flex;
   align-items: center;
+  margin: 0px;
+  height: 60px
 }
 
 #logo a:nth-child(2) img {
@@ -96,7 +90,44 @@ nav-bar {
   /* color: black; */
   /* background-color: white; */
 }
+.dropbtn {
+  width: 50px;
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 10px;
+  border: none;
+  margin: 0px;
+  border-radius: 50%;
+}
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.274);
+  /* z-index: 1; */
+}
+
+.dropdown-content a {
+  background: white;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {color: red; background-color:rgba(64, 63, 63, 0.34)}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #76c479;}
+/* Login-page-css */ 
 #login {
   margin-left: 30px;
   margin-top: 10px;
@@ -111,6 +142,7 @@ nav-bar {
 #login-text {
   font: 3em sans-serif;
   font-size: 20px;
+  margin-top: 10px;
 }
 
 
