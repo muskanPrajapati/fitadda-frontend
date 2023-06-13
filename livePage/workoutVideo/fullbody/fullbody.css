@@ -79,12 +79,10 @@
 #nav-bar-right-items {
   display: flex;
   height: 15px;
-  
 }
 #nav-bar-right-items > div {
   display: flex;
   align-items: center;
- 
 }
 
 #nav-bar-right-items a {

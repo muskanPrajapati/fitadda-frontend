@@ -19,13 +19,13 @@ try {
                         alt=""/>
                 </button>
                 <div class="dropdown-content">
-                <a href='../${fileName}/${profile}'><i class="fas fa-user"></i> Profile</a>
+                <a href='../../../${fileName}/${profile}'><i class="fas fa-user"></i> Profile</a>
 
-                <a href='../${fileName}/${support}'><i class="fas fa-headset"></i>
+                <a href='../../../${fileName}/${support}'><i class="fas fa-headset"></i>
                 Support
                 </a>
                 
-                <a href='../${fileName}/${account}'><i class="fas fa-cog"></i>
+                <a href='../../../${fileName}/${account}'><i class="fas fa-cog"></i>
                 Account
                 </a>
                 </div>

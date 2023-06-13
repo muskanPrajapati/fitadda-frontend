@@ -50,18 +50,7 @@ try {
 let clickCount = 0;
 
 function fetchLoginPage() {
-    clickCount++;
-        if (clickCount % 2 == 0) {
-            let x = document.getElementById('user-info-popup');
-            x.style.display = "none";
-            return;
-        }
-        var login = document.getElementById('login-text');
-        if (login.innerHTML != "Login") {
-            let x = document.getElementById('user-info-popup');
-            x.style.display = "inherit";
-            return;
-        }
+   
         var blur = document.getElementById('blur');
         blur.classList.toggle('active');
 
